@@ -31,3 +31,32 @@ function loginUserMessage(username){
 }
 
 console.log(loginUserMessage("Tanishq"))
+
+
+// rest operator "..."
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+console.log(calculateCartPrice(1, 2, 3, 4, 5))
+
+
+const user = {
+    username : "Tanishq",
+    price : 199
+}
+function handleObject(anyUser){
+    console.log(`User is ${anyUser.username} and price is ${anyUser.price}`)
+}
+// handleObject(user)
+handleObject({
+    username : "Tanishqq",
+    price : 999
+})
+
+
+const myNewArray = [200, 400, 100, 600]
+function returnSecondValue(){
+    return myNewArray[1]
+}
+console.log(returnSecondValue(myNewArray))
